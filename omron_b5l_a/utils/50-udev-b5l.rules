@@ -1,0 +1,1 @@
+SUBSYSTEMS=="tty", KERNEL=="ttyUSB[0-9]*", ATTRS{idVendor}=="0590", ATTRS{idProduct}=="00ca", GROUP="dialout", MODE="0666"

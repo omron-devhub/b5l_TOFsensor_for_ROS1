@@ -1,27 +1,37 @@
-■B5L 3D TOF Sensor Module Sample Code
+# OMRON B5L ROS
+## Description
+A ROS package for the sensor OMRON B5L 3D TOF.
 
-B5L is a 3D TOF sensor module for measuring distance to targets.
-These sample codes show an example of implementation for host device's software
-on ROS to connect to the B5L.
+this package was base from [example dir](example) || [omron_b5l_a_ROS1.zip](example/omron_b5l_a_ROS1.zip)
 
-■Language
+---
+## Connect OMRON B5L
 
-・English
-・Japanese
+    sudo modprobe usbserial vendor=0x0590 product=0x00ca
+    sudo chgrp dialout /dev/ttyUSB0
+    sudo chmod 666 /dev/ttyUSB0
+    sudo adduser $USER dialout
 
-■Installation
-Install sample codes in your PC.
+---
+## ROS Topics
+ROS topics published by this ROS Node:
+- **omron_b5l/pointcloud2** [(sensor_msgs/PointCloud2 )](https://docs.ros.org/en/api/sensor_msgs/html/msg/PointCloud2.html)
+    
+---
+### Build
+Perform a build of your workspace
 
- 1. Download ".zip" from this repository.
- 2. Unzip the ".zip."file.
+    cd ~/ros_ws
+    catkin build
 
-■How to Use
-Please see ReadMe_j.txt(Japanese) or ReadMe_e.txt(English) included in above unzipped folder.
-Also, Quick Setup Guide_ROS.pdf is included in this package for setting up ROS and this Sample Code.
+---
+### Running the ROS2 node
+Run the `omron_b5l_a` ROS node with default parameters:
+    
+    source devel/setup.bash
+    # run the node:
+    rosrun omron_b5l_a omron_b5l_a
 
-■License
-These sample codes and documentations are copyrighted property of OMRON Corporation.
-These sample codes do not guarantee proper operation.
-These sample codes are distributed in the Apache License 2.0.
+Run launch file:
 
-
+    roslaunch omron_b5l_a omrom_b5l_a.launch
