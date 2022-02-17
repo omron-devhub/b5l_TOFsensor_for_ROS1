@@ -105,7 +105,7 @@ int main(int argc, char *argv[])
 	std::string config_file = SOURCE_DIR_PREFIX;
 	ShutDownFlag = 0;
 	/* Load USB serial module */
-	system("sudo modprobe usbserial vendor=0x0590 product=0x00ca");
+	// system("sudo modprobe usbserial vendor=0x0590 product=0x00ca");
 
 	config_file.append(CONFIG_FILE_PATH);
 
