@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="omron_b5l_a" type="omron_b5l_a" name="omron_b5l_a_node" output="screen"/>
+</launch>
