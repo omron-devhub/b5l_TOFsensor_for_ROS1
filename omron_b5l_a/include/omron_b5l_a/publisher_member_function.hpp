@@ -47,8 +47,8 @@ using namespace std::chrono_literals;
 #define PUB_MSG_QUEUE_DEPTH 10
 
 /* Topic string macro */
-#define PUB_TOPIC_FRMT_001_002 "pointcloud2_xyz"
-#define PUB_TOPIC_FRMT_257_258 "pointcloud2_xyzi"
+#define PUB_TOPIC_FRMT_001_002 "omron_b5l/pointcloud2_xyz"
+#define PUB_TOPIC_FRMT_257_258 "omron_b5l/pointcloud2_xyzi"
 
 /* Config file string */
 #define CONFIG_FILE_PATH "/src/config/ToF_Sample.prm"
@@ -57,5 +57,4 @@ using namespace std::chrono_literals;
 ros::WallTimer timer_;
 ros::Publisher publisher_;
 sensor_msgs::PointCloud2Ptr pc2_msg_;
-std::string frame_id_ = "map";
-
+std::string frame_id_ = "omron_b5l";
