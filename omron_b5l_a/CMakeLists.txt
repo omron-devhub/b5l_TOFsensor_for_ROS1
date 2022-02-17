@@ -243,7 +243,6 @@ install(TARGETS ${PROJECT_NAME}
 install(FILES
   # myfile1
   # myfile2
-  launch
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
 )
 
