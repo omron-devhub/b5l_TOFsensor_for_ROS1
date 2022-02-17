@@ -47,8 +47,8 @@ using namespace std::chrono_literals;
 #define PUB_MSG_QUEUE_DEPTH 10
 
 /* Topic string macro */
-#define PUB_TOPIC_FRMT_001_002 "omron_b5l/pointcloud2_xyz"
-#define PUB_TOPIC_FRMT_257_258 "omron_b5l/pointcloud2_xyzi"
+#define PUB_TOPIC_FRMT_001_002 "omron_b5l/pointcloud2"
+#define PUB_TOPIC_FRMT_257_258 "omron_b5l/pointcloud2"
 
 /* Config file string */
 #define CONFIG_FILE_PATH "/src/config/ToF_Sample.prm"
