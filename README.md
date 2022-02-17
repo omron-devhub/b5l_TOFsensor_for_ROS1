@@ -2,7 +2,7 @@
 ## Description
 A ROS package for the sensor OMRON B5L 3D TOF.
 
-this package was base from [omron_b5l_a_ROS1.zip example](example/omron_b5l_a_ROS1.zip)
+this package was base from [example dir](example) [file omron_b5l_a_ROS1.zip](example/omron_b5l_a_ROS1.zip)
 
 ---
 ## Connect OMRON B5L
