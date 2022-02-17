@@ -1,3 +1,7 @@
+<?xml version="1.0"?>
 <launch>
-    <node pkg="omron_b5l_a" type="omron_b5l_a" name="omron_b5l_a_node" output="screen"/>
+    <node pkg="omron_b5l_a" type="omron_b5l_a" name="omron_b5l_a_node" output="screen">
+        <remap from="omron_b5l/pointcloud2_xyz" to="omron_b5l/pointcloud2"/>
+        <remap from="omron_b5l/pointcloud2_xyzi" to="omron_b5l/pointcloud2"/>
+    </node>
 </launch>
