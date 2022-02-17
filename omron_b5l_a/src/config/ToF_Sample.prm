@@ -17,8 +17,8 @@ FOV_LIMITATION = 1
 #     2: distance data (rectangle coordinates with rotation)
 #   257: distance data (rectangle coordinates without rotation) and amp. data
 #   258: distance data (rectangle coordinates with rotation) and amp. data
-OUTPUT_FORMAT=257
-#OUTPUT_FORMAT= 1
+#OUTPUT_FORMAT=257
+OUTPUT_FORMAT= 1
 
 # Operation Mode
 #     0: Normal Mode
